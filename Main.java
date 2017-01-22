@@ -12,5 +12,12 @@ public class Main {
 
         stringDAO.getAll().forEach(System.out::println);
         integerDAO.getAll().forEach(System.out::println);
+
+        DAO<String> stringDAO1 = new Test2DAO<>();
+        stringDAO1.save("Second db");
+        stringDAO1.save("Second db");
+        stringDAO1.save("Second db");
+
+        stringDAO1.getAll().forEach(System.out::println);
     }
 }
