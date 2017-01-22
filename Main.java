@@ -7,17 +7,17 @@ public class Main {
 
         stringDAO.getAll().forEach(System.out::println);
 
-        DAO<Integer> integerDAO = new TestDAO<>();
-        integerDAO.save(1);
-        integerDAO.save(1);
-        integerDAO.save(1);
+        DAO<String> integerDAO = new TestDAO<>();
+        integerDAO.save("str");
+        integerDAO.save("str");
+        integerDAO.save("qwe");
 
         integerDAO.getAll().forEach(System.out::println);
 
-        DAO<String> stringDAO1 = new Test2DAO<>();
-        stringDAO1.save("Second db");
-        stringDAO1.save("Second db");
-        stringDAO1.save("Second db");
+        DAO<Integer> stringDAO1 = new Test2DAO<>();
+        stringDAO1.save(2);
+        stringDAO1.save(2);
+        stringDAO1.save(2);
 
         stringDAO1.getAll().forEach(System.out::println);
     }

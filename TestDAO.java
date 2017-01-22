@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestDAO<T> extends AbstractDAO<T> implements DAO<T> {
+public class TestDAO<T extends String> extends AbstractDAO<T> implements DAO<T> {
     private List<T> hotelDb = new ArrayList<>();
 
     {
