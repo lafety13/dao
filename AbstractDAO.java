@@ -15,6 +15,5 @@ public class AbstractDAO<T> implements DAO<T> {
     @Override
     public void save(T obj) {
         localDb.add(obj);
-        System.out.println(localDb);
     }
 }

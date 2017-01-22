@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        DAO<String> stringDAO = new HotelDAO<>();
+        DAO<String> stringDAO = new TestDAO<>();
         stringDAO.save("hello");
         stringDAO.save("hello");
         stringDAO.save("hello");
 
-        DAO<Integer> integerDAO = new HotelDAO<>();
+        DAO<Integer> integerDAO = new TestDAO<>();
         integerDAO.save(1);
         integerDAO.save(1);
         integerDAO.save(1);
