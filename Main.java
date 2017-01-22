@@ -5,12 +5,13 @@ public class Main {
         stringDAO.save("hello");
         stringDAO.save("hello");
 
+        stringDAO.getAll().forEach(System.out::println);
+
         DAO<Integer> integerDAO = new TestDAO<>();
         integerDAO.save(1);
         integerDAO.save(1);
         integerDAO.save(1);
 
-        stringDAO.getAll().forEach(System.out::println);
         integerDAO.getAll().forEach(System.out::println);
 
         DAO<String> stringDAO1 = new Test2DAO<>();
